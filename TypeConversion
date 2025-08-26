@@ -1,0 +1,35 @@
+package com.learn.day3;
+
+import java.util.Scanner;
+
+public class TypeConversion {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		//Typecasting --Implicit typecasting
+		//conversion from shorter to larger
+		short sh=sc.nextShort();
+		int shortType=sh;
+		System.out.println(shortType);
+		
+		int in=sc.nextInt();
+		long l=in;
+		System.out.println(l);
+		
+		//Explicit typecasting
+		//conversion from larger to smaller
+		long lo=7897895644L;
+		long longInt=(int)lo;
+		System.out.println(longInt);
+		
+		//Char conversion
+		char ch='a';
+		long longChar=ch;
+		byte byteChar=(byte)ch;
+		System.out.println(longChar);
+		System.out.println(byteChar);
+		double d=sc.nextDouble();
+		float flo=(float)d;
+		System.out.println(flo);
+	}
+
+}
